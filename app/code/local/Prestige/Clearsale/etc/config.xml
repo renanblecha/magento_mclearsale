@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Prestige_Clearsale>
+            <version>1.0.0</version>
+        </Prestige_Clearsale>
+    </modules>   
+    <global>
+        <models>
+            <clearsale>
+                <class>Prestige_Clearsale_Model</class>
+            </clearsale>
+        </models>
+	    <helpers>
+	      	<clearsale>
+	      		<class>Prestige_Clearsale_Helper</class>
+	      	</clearsale>
+	    </helpers>	    
+        <blocks>
+            <clearsale>
+                <class>Prestige_Clearsale_Block</class>
+            </clearsale>
+        </blocks>	            
+    </global>        
+</config>

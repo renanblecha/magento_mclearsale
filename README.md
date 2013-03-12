@@ -17,5 +17,16 @@ Espero que ajudem...
 
 OBS: Esse módulo foi desenvolvido meio às pressas sugestões são sempre bem vindas.
 
+Caso esse módulo foi útil para você e queira fazer uma singela doação clique no botão abaixo:
+
+<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+<form target="pagseguro" action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+<input type="hidden" name="receiverEmail" value="blecha1990@gmail.com" />
+<input type="hidden" name="currency" value="BRL" />
+<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/doacoes/120x53-doar.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+</form>
+<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+
 Abraços, Renan.
 

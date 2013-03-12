@@ -1,7 +1,7 @@
 magento_mclearsale
 ==================
 
-Módulo que integra o controle anti-fraude M-ClearSale
+<p>Módulo que integra o controle anti-fraude M-ClearSale</p>
 
 no arquivo app/design/adminhtml/default/default/template/sales/order/view/info.phtml após fechamento da tag table (</table>) próximo à linha 104 adicionar o seguinte código:
 <?php echo $this->getLayout()->createBlock('clearsale/clearsale')->toHtml(); ?>

@@ -9,6 +9,43 @@
 					<show_in_default>1</show_in_default>
 				  	<show_in_website>1</show_in_website>
 				  	<show_in_store>1</show_in_store>
+				  	<comment>
+				  	<![CDATA[
+				  		<h1>Instruções de Uso</h1>
+
+						<h2>Módulo que integra o controle anti-fraude M-ClearSale</h2>
+						
+						<p>no arquivo app/design/adminhtml/default/default/template/sales/order/view/info.phtml após fechamento da tag table (/table>) próximo à linha 104 adicionar o seguinte código:
+						<?php echo $this->getLayout()->createBlock('clearsale/clearsale')->toHtml(); ?> </p>
+						
+						<p>Esse trecho inclui, nas informações do pedido, o iframe da ClearSale...</p>
+						
+						<p>Já no arquivo app/code/local/Prestige/Clearsale/Block/Clearsale.php
+						na função _afterToHtml($html) é onde está concentrado a função principal do Módulo, buscando as informações do pedido...</p>
+						
+						<p style="color:#CD0000">Tenham atenção para adequá-los conforme suas necessidades...</p>
+						
+						<p>Espero que ajudem...</p>
+						
+						<p>OBS: Esse módulo foi desenvolvido meio às pressas sugestões são sempre bem vindas.</p>
+						
+						<h3><strong>Caso esse módulo foi útil para você e queira fazer uma singela doação clique no botão abaixo:</strong></h3>
+						
+						<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+						<form target="pagseguro" action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+						<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+						<input type="hidden" name="receiverEmail" value="blecha1990@gmail.com" />
+						<input type="hidden" name="currency" value="BRL" />
+						<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/doacoes/120x53-doar.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+						</form>
+						<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+						<p style="height:10px;"></p>
+						<p><strong>Abraços, Renan Blecha (blecha1990@gmail.com).</strong></p>
+						<p style="height:10px;"></p>
+						<hr />
+						<p style="height:10px;"></p>
+				  	]]>
+				  	</comment>
                     <fields>
                         <active translate="label">
                             <label>Habilitar</label>

@@ -15,7 +15,7 @@ body{
 
 <h2>Módulo que integra o controle anti-fraude M-ClearSale</h2>
 
-<p>no arquivo app/design/adminhtml/default/default/template/sales/order/view/info.phtml após fechamento da tag table (</table>) próximo à linha 104 adicionar o seguinte código:
+<p>no arquivo app/design/adminhtml/default/default/template/sales/order/view/info.phtml após fechamento da tag table (/table>) próximo à linha 104 adicionar o seguinte código:
 <?php echo $this->getLayout()->createBlock('clearsale/clearsale')->toHtml(); ?> </p>
 
 <p>Esse trecho inclui, nas informações do pedido, o iframe da ClearSale...</p>
@@ -39,8 +39,9 @@ na função _afterToHtml($html) é onde está concentrado a função principal d
 <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/doacoes/120x53-doar.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
 </form>
 <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-
-<p>Abraços, Renan.</p>
+<p style="height:10px;"></p>
+<p><strong>Abraços, Renan Blecha (blecha1990@gmail.com).</strong></p>
+<p style="height:10px;"></p>
 
 </body>
 </html>
